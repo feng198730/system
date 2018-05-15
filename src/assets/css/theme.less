@@ -1,0 +1,80 @@
+#theme(@BaseColor:#000,@fontColor:#000,@qBgColor:#fff){
+    .baseBg{
+        background-color: @BaseColor;
+    }
+    .font{
+        color: @fontColor;
+    }
+    .baseFont{
+        color: @BaseColor;
+    }
+    .qBg{
+        background-color: @qBgColor;
+    }
+    /*登录页*/
+    .login-header,.is-checked+.el-checkbox__label{
+       .baseFont;
+    }
+   .alert-info,.btn-color{
+       .baseBg;
+       .font;
+   }
+    .icon-color{
+       color: @BaseColor;
+   }
+   .el-checkbox__inner:hover{
+        border-color: @BaseColor;
+   }
+   .is-checked .el-checkbox__inner{
+        .baseBg;
+        border-color: @BaseColor;
+   }
+   .el-select-dropdown__item.selected{
+        .baseFont;
+   }
+   .el-select-dropdown__item.hover,.el-select-dropdown__item:hover{
+        .qBg;
+   }
+   /*主页*/
+   .el-header{
+        .baseBg;
+   }
+    .el-submenu__title i,.el-menu-item.is-active,.el-select-dropdown__item.selected,.selected{
+        .baseFont;
+    }
+  
+    .el-menu-item:focus, .el-menu-item:hover,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
+        .qBg;
+    }
+    .sub-item i,.sub-item a{
+        .baseFont;
+    }
+    .sub-item.active{
+        .baseBg;
+    }
+    .el-menu-item.is-active,.el-submenu__title{
+        .qBg;
+    }
+ 
+    .el-tabs__item.is-active,.el-tabs__item:hover,.el-submenu__title{
+        .baseFont;
+    }
+    .el-select-dropdown__item.selected{
+        .baseFont;
+    }
+    .el-select-dropdown__item.hover,.el-select-dropdown__item:hover{
+        .qBg;
+    }
+    .el-button.is-plain:focus, .el-button.is-plain:hover{
+        .baseFont;
+    }
+}
+.theme-red{
+    #theme(#f56c6c,#fff,#ffecec);
+}
+.theme-blue{
+    #theme(#409EFF,#fff,#ecf5ff);
+}
+.theme-green{
+    #theme(#33cc33,#fff,#f0fff0);
+}
