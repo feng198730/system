@@ -1,14 +1,11 @@
 <template>
-    <div class="el-select user-bar">
-        <div @click="outShow">
-            <div class=" el-input">
-                <div class="user-name">张三</div>
-                <i class="glyphicon glyphicon-user icon-color icon"></i>
-                <span class="el-input__suffix">
-                    <i class="el-select__caret el-input__icon el-icon-arrow-up arrow" :class="{'is-reverse':isShow}"></i>
-                </span>
-            </div>
-
+    <div class="el-select user-bar" @click="outShow">
+        <div class=" el-input">
+            <div class="user-name">张三</div>
+            <i class="glyphicon glyphicon-user icon-color icon"></i>
+            <span class="el-input__suffix">
+                <i class="el-select__caret el-input__icon el-icon-arrow-up arrow" :class="{'is-reverse':isShow}"></i>
+            </span>
         </div>
         <transition name="el-zoom-in-top">
             <div v-if="isShow" class="el-select-dropdown el-popper zdy" ref="outBar" x-placement="bottom-start">
@@ -81,20 +78,29 @@ export default {
     position: relative;
     cursor: pointer;
 }
+.el-input{
+    width:100%;
+    height:100%;
+}
 .user-bar .icon {
     position: absolute;
-    left: 14px;
-    top: 14px;
+    left: 8px;
+    top: 12px;
 }
 .user-name {
-    line-height: 45px;
+    line-height: 40px;
     text-align: left;
-    padding-left: 35px;
+    padding-left: 30px;
 }
 .user-bar .arrow {
     position: absolute;
     top: 0;
-    right: -3px;
+    left: 90px;
+}
+.el-input__suffix{
+    display:block;
+    width:100%;
+    right:0;
 }
 .user-bar .el-input {
     display: block;
@@ -102,7 +108,7 @@ export default {
 .zdy {
     width: 120px;
     position: absolute;
-    top: 51px;
+    top: 40px;
     left: 0;
 }
 </style>

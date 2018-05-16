@@ -2,8 +2,7 @@
   <div>
     <el-row>
       <el-col :span="4" :offset="20" class="set-bar">
-        <my-theme :theme="theme">
-        </my-theme>
+        <my-theme :theme="theme"></my-theme>
       </el-col>
     </el-row>
     <el-row type="flex" justify="center" align="middle">

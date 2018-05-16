@@ -3,21 +3,11 @@
     <el-container>
       <el-header>
         <el-row :gutter="20">
-          <!-- <el-col :span="4">
-            <a href="#">
-              <h1>首页</h1>
-            </a>
-          </el-col>
-          <el-col :span="4">预留搜索</el-col> -->
-          <el-col :span="6" :offset="18">
-            <!-- <my-language :language="language" class="mr20">
-            </my-language> -->
-            <my-theme :theme="theme" class="mr20" :class="iTheme">
-            </my-theme>
+          <el-col :xs="{span:6,offset:18}" :sm="{span:9,offset:15}" :md="{span:7,offset:17}" :lg="{span:6,offset:18}" :xl="{span:6,offset:18}">
+            <my-theme :theme="theme" class="mr20" :class="iTheme"></my-theme>
             <my-user></my-user>
           </el-col>
         </el-row>
-
       </el-header>
       <el-container>
         <my-aside></my-aside>
@@ -104,7 +94,6 @@ export default {
     margin-bottom: 20px;
     color: #333;
     text-align: center;
-    line-height: 60px;
     border: 1px solid transparent;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }

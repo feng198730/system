@@ -25,7 +25,7 @@
    .el-checkbox__inner:hover{
         border-color: @BaseColor;
    }
-   .is-checked .el-checkbox__inner{
+   .is-checked .el-checkbox__inner,.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
         .baseBg;
         border-color: @BaseColor;
    }
@@ -36,13 +36,12 @@
         .qBg;
    }
    /*主页*/
-   .el-header{
+    .el-header{
         .baseBg;
-   }
+    }
     .el-submenu__title i,.el-menu-item.is-active,.el-select-dropdown__item.selected,.selected{
         .baseFont;
-    }
-  
+    } 
     .el-menu-item:focus, .el-menu-item:hover,.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
         .qBg;
     }
@@ -50,6 +49,9 @@
         .baseFont;
     }
     .sub-item.active{
+        .baseBg;
+    }
+    .show-btn{
         .baseBg;
     }
     .el-menu-item.is-active,.el-submenu__title{
@@ -67,6 +69,9 @@
     }
     .el-button.is-plain:focus, .el-button.is-plain:hover{
         .baseFont;
+    }
+    .el-table th{
+        .qBg;
     }
 }
 .theme-red{
