@@ -78,10 +78,7 @@ export default {
     position: relative;
     cursor: pointer;
 }
-.el-input{
-    width:100%;
-    height:100%;
-}
+
 .user-bar .icon {
     position: absolute;
     left: 8px;

@@ -1,3 +1,5 @@
+/* 自定义字体 */
+
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url('../fonts/glyphicons-halflings-regular.eot');
@@ -46,6 +48,9 @@
     content: "\e064";
 }
 
+
+/* 公共样式 */
+
 .w90 {
     width: 90px;
     float: left;
@@ -55,6 +60,9 @@
 .mr20 {
     margin-right: 20px;
 }
+
+
+/* 修改elementUI样式 */
 
 .el-input--suffix .el-input__inner {
     vertical-align: top;
@@ -72,6 +80,23 @@
     position: relative;
     top: -2px;
 }
+
+
+/* 淡出动画样式 */
+
+
+/* .fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+} */
+
+
+/* 响应式 */
 
 @media only screen and (max-width: 768px) {
     .el-select-dropdown__item {

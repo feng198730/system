@@ -79,7 +79,6 @@ export default {
     text-align: center;
     line-height: 200px;
     flex-shrink: 1;
-    /* width: 200px; */
 }
 .el-menu {
     border-right: none;

@@ -8,6 +8,7 @@
     </div>
 </template>
 <script>
+import theme from "@/config/theme";
 export default {
     props: ["theme"],
     data() {
@@ -17,7 +18,7 @@ export default {
     },
     computed: {
         getThemes() {
-            return this.$t("theme");
+            return theme;
         }
     },
     created() {

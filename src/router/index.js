@@ -11,11 +11,16 @@ let router = new Router({
     routes: [{
             path: '/',
             name: 'login',
-            component: Login
+            component: Login,
+            desc: '登录'
         },
         {
             path: '/home',
             component: Home
+        },
+        {
+            path: '*',
+            redirect: '/'
         }
     ],
     beforeEnter(to, from, next) {
